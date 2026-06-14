@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembahasan Psikologi dalam Hadits Nabi & Review Website</title>
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Kustomisasi Scrollbar */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #10b981; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #059669; }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col h-screen overflow-hidden text-gray-800">
+
+    <header class="bg-emerald-800 text-white shadow-md sticky top-0 z-50 flex items-center justify-between px-4 py-3 shrink-0">
+        <div class="flex items-center gap-4">
+            <button id="btn-sidebar-toggle" class="lg:hidden text-white text-2xl focus:outline-none hover:text-emerald-200 transition-colors">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="font-bold text-xl tracking-wide flex items-center gap-2">
+                HADITS DIGITAL
+            </div>
+        </div>
+        
+        <div class="flex items-center border-l border-emerald-600 pl-4">
+            <a href="tentang.html" target="content-frame" class="cursor-pointer block">
+                <img src="https://i.ibb.co/YFjnMLG0/IMG-20260311-WA0093.jpg" alt="Profile" class="w-10 h-10 rounded-full object-cover border-2 border-yellow-500 shadow-sm hover:scale-105 transition-transform duration-200">
+            </a>
+        </div>
+    </header>
+
+    <div class="flex flex-1 overflow-hidden relative">
+        
+        <div id="sidebar-overlay" class="fixed inset-0 bg-gray-900/50 z-30 hidden transition-opacity lg:hidden backdrop-blur-sm"></div>
+
+        <aside id="sidebar" class="bg-white w-72 md:w-80 border-r border-gray-200 shadow-xl absolute inset-y-0 left-0 z-40 transform -translate-x-full transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 overflow-y-auto flex flex-col">
+            
+            <div class="p-6 border-b border-gray-100 bg-emerald-50/50">
+                <h2 class="text-xs font-bold text-emerald-800 uppercase tracking-widest mb-1">Daftar Isi</h2>
+                <p class="text-sm text-gray-500">Navigasi Materi & Review</p>
+            </div>
+
+            <nav class="p-4 flex flex-col gap-2 flex-1">
+                
+                <a href="cover.html" target="content-frame" class="menu-link w-full text-left px-4 py-3 bg-white text-gray-700 rounded-lg font-medium hover:bg-emerald-50 hover:text-emerald-700 transition-all border border-transparent hover:border-emerald-100 flex items-center gap-3">
+                    <span class="text-emerald-600">♦</span> HOME
+                </a>
+
+                <div class="dropdown-container">
+                    <button onclick="toggleDropdown(this, 'dropdown-ebook')" class="w-full text-left px-4 py-3 bg-white text-gray-700 rounded-lg font-medium hover:bg-emerald-50 hover:text-emerald-700 transition-all border border-transparent hover:border-emerald-100 flex justify-between items-center">
+                        <span class="flex items-center gap-3"><span class="text-emerald-600">♦</span> E-BOOK</span>
+                        <span class="text-emerald-600 text-xs transition-transform duration-200" id="icon-dropdown-ebook">♦</span>
+                    </button>
+                    <div id="dropdown-ebook" class="hidden flex-col pl-11 pr-4 py-2 gap-1 bg-white border-l-2 border-emerald-300 ml-3 mt-1 mb-2">
+                        <a href="kata_pengantar.html" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Kata Pengantar
+                        </a>
+                        <a href="bab1.html" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Bab 1: Hadits-Hadits Psikologi
+                        </a>
+                        <a href="bab2.html" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Bab 2: Aplikasi Psikologi Hadits
+                        </a>
+                        <a href="bab3.html" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Bab 3: Psikologi Kepribadian
+                        </a>
+                        <a href="bab4.html" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Bab 4: Neuropsikologi
+                        </a>
+                        <a href="daftar_pustaka.html" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Daftar Pustaka
+                        </a>
+                        <a href="tentang.html" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Tentang Penulis
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dropdown-container">
+                    <button onclick="toggleDropdown(this, 'dropdown-review')" class="w-full text-left px-4 py-3 bg-white text-gray-700 rounded-lg font-medium hover:bg-emerald-50 hover:text-emerald-700 transition-all border border-transparent hover:border-emerald-100 flex justify-between items-center">
+                        <span class="flex items-center gap-3"><span class="text-emerald-600">♦</span> REVIEW HADITS DIGITAL</span>
+                        <span class="text-emerald-600 text-xs transition-transform duration-200" id="icon-dropdown-review">♦</span>
+                    </button>
+                    <div id="dropdown-review" class="hidden flex-col pl-11 pr-4 py-2 gap-1 bg-white border-l-2 border-emerald-300 ml-3 mt-1 mb-2">
+                        <a href="https://drive.google.com/file/d/104bWJOI369n-y5Z6rA0-GqMi2aWzYj-o/preview" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Review Android Application: Ensiklopedi Hadits
+                        </a>
+                        <a href="https://drive.google.com/file/d/1xXtOqGndqUB7S4--8GK2a38gk_W-FAxl/preview" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Review Desktop Application: Al-Hadith
+                        </a>
+                        <a href="https://drive.google.com/file/d/1WzLYqYhC8x1MLdBPGHhY6phj564UXv02/preview" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Review E-Book: Kitab Shahih Muslim
+                        </a>
+                        <a href="https://drive.google.com/file/d/1X6Gozn3GzIXMjHGCgojqJMHjWwWLTSM_/preview" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Review Website Hadits ID
+                        </a>
+                        <a href="https://drive.google.com/file/d/1UsXW0xoClAGWjOX-aSTzyihAcbU9fR_4/preview" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Review Website Marja’ Muhammad Basuki
+                        </a>
+                        <a href="https://drive.google.com/file/d/1Cs59Plk0VF3s7A-RZp51818WT7JxLp_7/preview" target="content-frame" class="menu-link w-full text-left py-2 text-sm text-gray-600 hover:text-emerald-700 transition-colors flex items-start gap-2">
+                            <span class="text-emerald-500 text-[10px] mt-1">♦</span> Review Website: Hadits Tazkia
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+            
+            <div class="p-4 border-t border-gray-100 text-xs text-center text-gray-400 font-medium tracking-wide">
+                &copy; 2026 Hadits Digital
+            </div>
+        </aside>
+
+        <main class="flex-1 bg-gray-200 relative w-full h-full">
+            <iframe id="content-frame" name="content-frame" src="cover.html" class="w-full h-full border-none bg-white"></iframe>
+        </main>
+    </div>
+
+    <script>
+        // Interaksi Dropdown Menu
+        function toggleDropdown(btnElement, dropdownId) {
+            const targetDropdown = document.getElementById(dropdownId);
+            const isHidden = targetDropdown.classList.contains('hidden');
+            
+            // Tutup semua dropdown lain terlebih dahulu
+            document.querySelectorAll('[id^="dropdown-"]').forEach(el => {
+                el.classList.add('hidden');
+                el.classList.remove('flex');
+            });
+            document.querySelectorAll('[id^="icon-dropdown-"]').forEach(icon => {
+                icon.style.transform = 'rotate(0deg)';
+            });
+
+            // Buka dropdown yang diklik jika sebelumnya tertutup
+            if (isHidden) {
+                targetDropdown.classList.remove('hidden');
+                targetDropdown.classList.add('flex');
+                const icon = document.getElementById('icon-' + dropdownId);
+                if (icon) icon.style.transform = 'rotate(90deg)';
+            }
+        }
+
+        // Logika Menutup Dropdown jika area di luar menu diklik
+        document.addEventListener('click', function(event) {
+            const isDropdownClick = event.target.closest('.dropdown-container');
+            const isSidebarToggleClick = event.target.closest('#btn-sidebar-toggle');
+            
+            if (!isDropdownClick && !isSidebarToggleClick) {
+                document.querySelectorAll('[id^="dropdown-"]').forEach(el => {
+                    el.classList.add('hidden');
+                    el.classList.remove('flex');
+                });
+                document.querySelectorAll('[id^="icon-dropdown-"]').forEach(icon => {
+                    icon.style.transform = 'rotate(0deg)';
+                });
+            }
+        });
+
+        // Kontrol Laci Sidebar Mobile (Drawer)
+        const btnSidebar = document.getElementById('btn-sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+
+        function tutupSidebarMobile() {
+            if (window.innerWidth < 1024) { // Deteksi mobile
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+            }
+        }
+
+        // Event Listeners
+        btnSidebar.addEventListener('click', toggleSidebar);
+        overlay.addEventListener('click', tutupSidebarMobile);
+        
+        // Tutup sidebar mobile otomatis setiap kali link ditekan
+        menuLinks.forEach(link => {
+            link.addEventListener('click', tutupSidebarMobile);
+        });
+    </script>
+</body>
+</html>
